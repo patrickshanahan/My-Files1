@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Files__Ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39g-MP-XFU">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="My Files, Ipad" id="7Tx-op-Ypi"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrM-A0-2pG">
+                                <rect key="frame" x="260" y="95" width="80" height="30"/>
+                                <state key="normal" title="Local PDF 1"/>
+                                <connections>
+                                    <segue destination="7Uc-6S-VHE" kind="presentation" id="9c5-AL-nBZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab8-pK-pek">
+                                <rect key="frame" x="259" y="133" width="82" height="30"/>
+                                <state key="normal" title="Local PDF 2"/>
+                                <connections>
+                                    <segue destination="xrN-6t-WCH" kind="presentation" id="Tv4-6Q-bBq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35Y-33-hdd">
+                                <rect key="frame" x="272" y="171" width="56" height="30"/>
+                                <state key="normal" title="External"/>
+                                <connections>
+                                    <segue destination="yhz-Fc-NgM" kind="presentation" id="GaM-DM-HcG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="39g-MP-XFU" secondAttribute="trailing" id="0dj-6T-2jI"/>
+                            <constraint firstItem="35Y-33-hdd" firstAttribute="top" secondItem="Ab8-pK-pek" secondAttribute="bottom" constant="8" symbolic="YES" id="4G6-GN-INI"/>
+                            <constraint firstItem="Ab8-pK-pek" firstAttribute="centerX" secondItem="35Y-33-hdd" secondAttribute="centerX" id="6xI-hr-5tP"/>
+                            <constraint firstItem="BrM-A0-2pG" firstAttribute="centerX" secondItem="Ab8-pK-pek" secondAttribute="centerX" id="7E8-ba-FbV"/>
+                            <constraint firstItem="39g-MP-XFU" firstAttribute="centerX" secondItem="BrM-A0-2pG" secondAttribute="centerX" id="8PB-c8-wS7"/>
+                            <constraint firstItem="BrM-A0-2pG" firstAttribute="top" secondItem="39g-MP-XFU" secondAttribute="bottom" constant="31" id="9Aq-mQ-0Mr"/>
+                            <constraint firstItem="39g-MP-XFU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bg6-UF-6uX"/>
+                            <constraint firstItem="39g-MP-XFU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pWu-u0-xdk"/>
+                            <constraint firstItem="Ab8-pK-pek" firstAttribute="top" secondItem="BrM-A0-2pG" secondAttribute="bottom" constant="8" symbolic="YES" id="saJ-RK-qzD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--LocalPDF View Controller2-->
+        <scene sceneID="vTu-0R-tkN">
+            <objects>
+                <viewController id="xrN-6t-WCH" customClass="LocalPDFViewController2" customModule="My_Files__Ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="576-hZ-b02"/>
+                        <viewControllerLayoutGuide type="bottom" id="dkC-8h-6ch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AHX-dQ-Ff4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0x-7M-i6g">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Local PDF 2" id="nVZ-cl-Cb7">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="hpn-8o-2yL">
+                                            <connections>
+                                                <action selector="btnBack:" destination="xrN-6t-WCH" id="bXz-ua-cCM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k89-eC-prw">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k89-eC-prw" firstAttribute="top" secondItem="E0x-7M-i6g" secondAttribute="bottom" id="2hY-gu-coa"/>
+                            <constraint firstAttribute="trailing" secondItem="E0x-7M-i6g" secondAttribute="trailing" id="9dx-fX-Uqf"/>
+                            <constraint firstItem="k89-eC-prw" firstAttribute="bottom" secondItem="dkC-8h-6ch" secondAttribute="top" id="Sjk-So-Zd5"/>
+                            <constraint firstItem="E0x-7M-i6g" firstAttribute="top" secondItem="576-hZ-b02" secondAttribute="bottom" id="ad9-yp-tdA"/>
+                            <constraint firstItem="E0x-7M-i6g" firstAttribute="leading" secondItem="AHX-dQ-Ff4" secondAttribute="leading" id="bgT-1j-Sfs"/>
+                            <constraint firstItem="E0x-7M-i6g" firstAttribute="leading" secondItem="k89-eC-prw" secondAttribute="leading" id="lkj-9y-KOp"/>
+                            <constraint firstItem="E0x-7M-i6g" firstAttribute="trailing" secondItem="k89-eC-prw" secondAttribute="trailing" id="ntF-O6-oq1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="k89-eC-prw" id="6ws-gf-r8h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggZ-Ac-oAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="1204"/>
+        </scene>
+        <!--LocalPDF View Controller-->
+        <scene sceneID="lAh-n1-jQn">
+            <objects>
+                <viewController id="7Uc-6S-VHE" customClass="LocalPDFViewController" customModule="My_Files__Ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pUL-XT-gXL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ya4-G1-GGT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g1y-2R-pua">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-19-Ava">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Local PDF 1" id="sk3-if-AmD">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Un2-aS-WYC">
+                                            <connections>
+                                                <action selector="btnBack:" destination="7Uc-6S-VHE" id="GIv-4g-tNj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sJ-kS-ET1">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9sJ-kS-ET1" firstAttribute="bottom" secondItem="Ya4-G1-GGT" secondAttribute="top" id="AR2-vf-o1r"/>
+                            <constraint firstAttribute="trailing" secondItem="Hwq-19-Ava" secondAttribute="trailing" id="BQd-Qq-qVA"/>
+                            <constraint firstItem="Hwq-19-Ava" firstAttribute="top" secondItem="pUL-XT-gXL" secondAttribute="bottom" id="N24-Iq-qKr"/>
+                            <constraint firstItem="Hwq-19-Ava" firstAttribute="leading" secondItem="g1y-2R-pua" secondAttribute="leading" id="RyL-iS-MOo"/>
+                            <constraint firstItem="9sJ-kS-ET1" firstAttribute="top" secondItem="Hwq-19-Ava" secondAttribute="bottom" id="YSl-NP-DeU"/>
+                            <constraint firstItem="Hwq-19-Ava" firstAttribute="leading" secondItem="9sJ-kS-ET1" secondAttribute="leading" id="eBG-1F-oML"/>
+                            <constraint firstItem="Hwq-19-Ava" firstAttribute="trailing" secondItem="9sJ-kS-ET1" secondAttribute="trailing" id="iGM-uE-PTP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="9sJ-kS-ET1" id="0zk-Yd-L6r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGm-fa-K8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="382"/>
+        </scene>
+        <!--Load External View Controller-->
+        <scene sceneID="q7r-NQ-Psv">
+            <objects>
+                <viewController id="yhz-Fc-NgM" customClass="LoadExternalViewController" customModule="My_Files__Ipad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V7o-1n-Fgi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wz0-fI-NaV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O4a-J0-cwG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7e-wj-e1L">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="External PDF" id="hvI-0v-ylp">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Sal-ga-Gkx">
+                                            <connections>
+                                                <action selector="btnBack:" destination="yhz-Fc-NgM" id="U4e-NJ-Gry"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmh-bb-5m9">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E7e-wj-e1L" firstAttribute="leading" secondItem="O4a-J0-cwG" secondAttribute="leading" id="1NY-ja-5gS"/>
+                            <constraint firstItem="Pmh-bb-5m9" firstAttribute="bottom" secondItem="Wz0-fI-NaV" secondAttribute="top" id="Oa0-mI-IxK"/>
+                            <constraint firstItem="E7e-wj-e1L" firstAttribute="leading" secondItem="Pmh-bb-5m9" secondAttribute="leading" id="RF9-rd-uYM"/>
+                            <constraint firstItem="E7e-wj-e1L" firstAttribute="top" secondItem="V7o-1n-Fgi" secondAttribute="bottom" id="ZaO-xi-ZNT"/>
+                            <constraint firstItem="E7e-wj-e1L" firstAttribute="trailing" secondItem="Pmh-bb-5m9" secondAttribute="trailing" id="nlM-qN-hMh"/>
+                            <constraint firstItem="Pmh-bb-5m9" firstAttribute="top" secondItem="E7e-wj-e1L" secondAttribute="bottom" id="wOP-q0-QlO"/>
+                            <constraint firstAttribute="trailing" secondItem="E7e-wj-e1L" secondAttribute="trailing" id="wf2-T6-Jm8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="Pmh-bb-5m9" id="jAZ-75-xOr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQL-Ef-6iB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="1124"/>
+        </scene>
+    </scenes>
+</document>
